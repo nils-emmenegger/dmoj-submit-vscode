@@ -14,8 +14,16 @@
   "contributes": {
     "commands": [
       {
-        "command": "dmoj-submit-vscode.helloWorld",
-        "title": "Hello World"
+        "command": "dmoj-submit-vscode.submit",
+        "title": "Submit current file to DMOJ"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "dmoj-submit-vscode.submit",
+        "key": "ctrl+alt+s",
+        "mac": "cmd+alt+s",
+        "when": "editorTextFocus"
       }
     ]
   },
