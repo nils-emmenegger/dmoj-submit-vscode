@@ -6,7 +6,8 @@ import * as vscode from 'vscode';
 function callDmojSubmit(fileName: string) {
 	let terminal = vscode.window.createTerminal("dmoj-submit");
 	terminal.show();
-	terminal.sendText(`dmoj-submit submit '${fileName}'`);
+	const command = vscode.workspace.getConfiguration("dmoj-submit-vscode").get("command");
+	terminal.sendText(`${command} submit '${fileName}'`);
 }
 
 // This method is called when your extension is activated

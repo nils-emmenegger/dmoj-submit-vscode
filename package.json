@@ -18,6 +18,16 @@
         "title": "Submit current file to DMOJ"
       }
     ],
+    "configuration": {
+      "title": "dmoj-submit-vscode",
+      "properties": {
+        "dmoj-submit-vscode.command": {
+          "type": "string",
+          "default": "dmoj-submit",
+          "markdownDescription": "dmoj-submit-vscode submits files by sending `${command} submit '${fileName}'` to a terminal. This setting lets you change what `command` is. This can be necessary if, for example, your `dmoj-submit` executable is not in your `PATH` in which case you might replace it with something like `windows` for Windows, `/Users/<user>/Downloads/dmoj-submit` for MacOS, or `/home/<user>/Downloads/dmoj-submit` for Linux."
+        }
+      }
+    },
     "keybindings": [
       {
         "command": "dmoj-submit-vscode.submit",
